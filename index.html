@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Кейсы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--
+Для того, чтобы поменять шапку под темный фон
+достаточно добавить атрибут data-style="dark" в тег header
+
+<header data-style="dark">
+-->
+<header>
+    <div class="container">
+        <div class="header__logo">
+            <img src="images/logo_23_41.png" alt="Логотип itha">
+            <div class="header__logo_text">
+                <span class="header__logo__title roboto-bold">Айтиха</span>
+                <span class="header__logo__rectangle"></span>
+            </div>
+        </div>
+        <nav class="header__nav">
+            <ul>
+                <li>
+                    <span class="dropdown-button" data-itha="dropdown-button" id="js-header-services-button">
+                        <span class="link-1">Услуги</span>
+                        <svg class="dropdown-button__chevron" fill="currentColor" width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 8L0.937822 0.5L13.0622 0.500001L7 8Z" fill="current"/>
+                        </svg>
+                    </span>
+                </li>
+                <li><a href="#">Кейсы</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Блог</a></li>
+            </ul>
+        </nav>
+        <div class="header__button">
+            <button class="black-button">
+                <span class="link-1">Начать проект</span>
+                <span class="black-button__rectangle"></span>
+            </button>
+        </div>
+    </div>
+    <div class="header__sub-nav" id="js-header-services-list">
+        <nav class="container">
+            <ul>
+                <li><a href="#" class="uppercase link-5 header__sub-nav__link">Сайты</a></li>
+                <li><a href="#" class="uppercase link-5 header__sub-nav__link">Мобильные приложения</a></li>
+                <li><a href="#" class="uppercase link-5 header__sub-nav__link">Программы</a></li>
+                <li><a href="#" class="uppercase link-5 header__sub-nav__link">Интернет-маркетинг</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <div class="case-search__header">
+        <h1 class="case-search__title uppercase roboto-regular">Кейсы</h1>
+        <div class="case-search__button">
+            <span class="dropdown-button link-2" data-itha="dropdown-button" id="js-case-search__button">
+                <span id="js-case-search__button__text">Все кейсы</span>
+                <svg class="dropdown-button__chevron" fill="currentColor" width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 8L0.937822 0.5L13.0622 0.500001L7 8Z" fill="current"/>
+                </svg>
+            </span>
+        </div>
+    </div>
+    <form class="case-search__menu" id="js-case-search__menu" method="get">
+        <button class="uppercase case-search__menu__item link-5" name="filter" value="all">
+            Все кейсы
+        </button>
+        <button class="uppercase case-search__menu__item link-5" name="filter" value="websites">
+            Сайты
+        </button>
+        <button class="uppercase case-search__menu__item link-5" name="filter" value="mobile-applications">
+            Мобильные приложения
+        </button>
+        <button class="uppercase case-search__menu__item link-5" name="filter" value="programs">
+            Программы
+        </button>
+        <button class="uppercase case-search__menu__item link-5" name="filter" value="internet-marketing">
+            Интернет-маркетинг
+        </button>
+    </form>
+
+    <section class="case-list">
+        <div class="case-list__card">
+            <div class="case-list__card__img__wrapper">
+                <div class="case-list__card__img" style="--bg-image: url('images/Налегке-ноутбуки.png');" ></div>
+                <a class="case-list__card__link" href="#">
+                    <span class="case-list__card__link__text uppercase roboto-regular link-3">Смотреть</span>
+                    <svg class="case-list__card__link__arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.77419 44L0 42.2258L39.7419 2.48387H13.129V0H44V30.871H41.5161V4.25806L1.77419 44Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="case-list__card__info">
+                <h3 class="case-list__card__title uppercase roboto-regular">Налегке</h3>
+                <p class="case-list__card__description">Корпоративный сайт инновационной компании по банкротству физических лиц</p>
+            </div>
+        </div>
+
+        <div class="case-list__card">
+            <div class="case-list__card__img__wrapper">
+                <div class="case-list__card__img" style="--bg-image: url('images/ЖК-Садовый.png');" ></div>
+                <a class="case-list__card__link" href="#">
+                    <span class="case-list__card__link__text uppercase roboto-regular link-3">Смотреть</span>
+                    <svg class="case-list__card__link__arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.77419 44L0 42.2258L39.7419 2.48387H13.129V0H44V30.871H41.5161V4.25806L1.77419 44Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="case-list__card__info">
+                <h3 class="case-list__card__title uppercase roboto-regular">ЖК Садовый</h3>
+                <p class="case-list__card__description">Лендинг для современного жилого квартала</p>
+            </div>
+        </div>
+
+        <div class="case-list__card">
+            <div class="case-list__card__img__wrapper">
+                <div class="case-list__card__img" style="--bg-image: url('images/Анатомия.png');" ></div>
+                <a class="case-list__card__link" href="#">
+                    <span class="case-list__card__link__text uppercase roboto-regular link-3">Смотреть</span>
+                    <svg class="case-list__card__link__arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.77419 44L0 42.2258L39.7419 2.48387H13.129V0H44V30.871H41.5161V4.25806L1.77419 44Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="case-list__card__info">
+                <h3 class="case-list__card__title uppercase roboto-regular">Анатомия</h3>
+                <p class="case-list__card__description">Корпоративный сайт для косметической клиники</p>
+            </div>
+        </div>
+
+        <div class="case-list__card">
+            <div class="case-list__card__img__wrapper">
+                <div class="case-list__card__img" style="--bg-image: url('images/Налегке-телефоны.png');" ></div>
+                <a class="case-list__card__link" href="#">
+                    <span class="case-list__card__link__text uppercase roboto-regular link-3">Смотреть</span>
+                    <svg class="case-list__card__link__arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.77419 44L0 42.2258L39.7419 2.48387H13.129V0H44V30.871H41.5161V4.25806L1.77419 44Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="case-list__card__info">
+                <h3 class="case-list__card__title uppercase roboto-regular">Налегке</h3>
+                <p class="case-list__card__description">Мобильное приложение для  инновационной компании по банкротству физических лиц</p>
+            </div>
+        </div>
+        <div class="case-list__card">
+            <div class="case-list__card__img__wrapper">
+                <div class="case-list__card__img" style="--bg-image: url('images/Налегке-ноутбуки.png');" ></div>
+                <a class="case-list__card__link" href="#">
+                    <span class="case-list__card__link__text uppercase roboto-regular link-3">Смотреть</span>
+                    <svg class="case-list__card__link__arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.77419 44L0 42.2258L39.7419 2.48387H13.129V0H44V30.871H41.5161V4.25806L1.77419 44Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="case-list__card__info">
+                <h3 class="case-list__card__title uppercase roboto-regular">Налегке</h3>
+                <p class="case-list__card__description">Корпоративный сайт инновационной компании по банкротству физических лиц</p>
+            </div>
+        </div>
+
+        <div class="case-list__card">
+            <div class="case-list__card__img__wrapper">
+                <div class="case-list__card__img" style="--bg-image: url('images/ЖК-Садовый.png');" ></div>
+                <a class="case-list__card__link" href="#">
+                    <span class="case-list__card__link__text uppercase roboto-regular link-3">Смотреть</span>
+                    <svg class="case-list__card__link__arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.77419 44L0 42.2258L39.7419 2.48387H13.129V0H44V30.871H41.5161V4.25806L1.77419 44Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="case-list__card__info">
+                <h3 class="case-list__card__title uppercase roboto-regular">ЖК Садовый</h3>
+                <p class="case-list__card__description">Лендинг для современного жилого квартала</p>
+            </div>
+        </div>
+
+        <div class="case-list__card">
+            <div class="case-list__card__img__wrapper">
+                <div class="case-list__card__img" style="--bg-image: url('images/Анатомия.png');" ></div>
+                <a class="case-list__card__link" href="#">
+                    <span class="case-list__card__link__text uppercase roboto-regular link-3">Смотреть</span>
+                    <svg class="case-list__card__link__arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.77419 44L0 42.2258L39.7419 2.48387H13.129V0H44V30.871H41.5161V4.25806L1.77419 44Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="case-list__card__info">
+                <h3 class="case-list__card__title uppercase roboto-regular">Анатомия</h3>
+                <p class="case-list__card__description">Корпоративный сайт для косметической клиники</p>
+            </div>
+        </div>
+
+        <div class="case-list__card">
+            <div class="case-list__card__img__wrapper">
+                <div class="case-list__card__img" style="--bg-image: url('images/Налегке-телефоны.png');" ></div>
+                <a class="case-list__card__link" href="#">
+                    <span class="case-list__card__link__text uppercase roboto-regular link-3">Смотреть</span>
+                    <svg class="case-list__card__link__arrow" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.77419 44L0 42.2258L39.7419 2.48387H13.129V0H44V30.871H41.5161V4.25806L1.77419 44Z" fill="white"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="case-list__card__info">
+                <h3 class="case-list__card__title uppercase roboto-regular">Налегке</h3>
+                <p class="case-list__card__description">Мобильное приложение для  инновационной компании по банкротству физических лиц</p>
+            </div>
+        </div>
+    </section>
+
+    <button class="black-button" id="js-cases-more-button">
+        <span>Еще</span>
+        <span class="black-button__rectangle"></span>
+    </button>
+</main>
+
+<!-- Скрипт для страницы с кейсами -->
+<script src="scripts/cases-page.js"></script>
+
+<!-- Скрипт для кнопок с шевроном треугольника -->
+<script src="scripts/dropdown-button.js"></script>
+
+<!-- Для хедера -->
+<script src="scripts/header.js"></script>
+</body>
+</html>
