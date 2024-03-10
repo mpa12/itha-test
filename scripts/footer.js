@@ -12,7 +12,7 @@
     const setFooterTemplate = () => {
         const { innerWidth } = window;
 
-        const version = innerWidth <= 500 ? 'mobile' : 'desktop';
+        const version = innerWidth <= 375 ? 'mobile' : 'desktop';
 
         footer.innerHTML = footerTemplates[version].innerHTML;
     };
