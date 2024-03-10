@@ -442,6 +442,10 @@ footer.container {
     color: var(--itha-black);
 }
 
+.footer__nav__links__media a {
+    text-align: right;
+}
+
 @media (max-width: 37.5rem) {
     footer.container {
         flex-direction: column;
@@ -483,6 +487,19 @@ footer.container {
 
     .footer__nav__docs {
         margin: 2rem 0;
+    }
+
+    .footer__nav__links {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .footer__nav__links div {
+        flex-grow: 1;
+    }
+
+    .footer__nav__links__media a {
+        text-align: left;
     }
 }
 
