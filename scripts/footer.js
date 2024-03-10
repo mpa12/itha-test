@@ -10,9 +10,11 @@
     const footer = document.querySelector('#js-footer');
 
     const setFooterTemplate = () => {
-        const { innerWidth } = window;
+        const width = window.innerWidth
+            || document.documentElement.clientWidth
+            || document.body.clientWidth;
 
-        const version = innerWidth <= 375 ? 'mobile' : 'desktop';
+        const version = width <= 375 ? 'mobile' : 'desktop';
 
         footer.innerHTML = footerTemplates[version].innerHTML;
     };
